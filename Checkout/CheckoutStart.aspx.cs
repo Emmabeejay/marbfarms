@@ -14,7 +14,7 @@ namespace Aquafarms.Checkout
 			
 			if (Session["payment_amt"] != null)
 			{
-				string amt = Session["payment_amt"].ToString();
+				string Amt = Session["payment_amt"].ToString();
 
 			}
 			else

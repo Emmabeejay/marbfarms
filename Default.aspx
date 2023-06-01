@@ -19,21 +19,27 @@
 			<h1> Aquafarms is for everyone who consumes Aquatic products.</h1>
 			<ul class="service-list">
 				<li> 
-					<a href="#" title="fish for households, women and wifes">
+					<a href="/Category/Household%20Products" title="fish for households, women and wifes">
 						<h3>Household</h3>
-						<h4>Buy one-off and pick-up at your convenience</h4>
+						<h4>Buy now pick-up at your convenience</h4>
 					</a>
 				</li>
 				<li> 
 					<a href="#" title="fish for hotels, restaurants and bar owners">
 						<h3>Restaurants & Bars</h3>
-						<h4>Subscribe to a monthly/weekly based delivery</h4>
+						<h4>Subscribe to a scheduled based delivery</h4>
 					</a>
 				</li>
 				<li> 
 					<a href="#" title="fish for social events, parties">
 						<h3>Socials</h3>
-						<h4>Buy in advance and schedule delivery to specific date</h4>
+						<h4>Order now choose your delivery date</h4>
+					</a>
+				</li>
+				<li> 
+					<a href="/Category/Farmer%20Products" title="fish for social events, parties">
+						<h3>Farmers</h3>
+						<h4>Order your juvenile</h4>
 					</a>
 				</li>
 			</ul>
@@ -47,8 +53,10 @@
 						<a href="#" class="btn"> Shop Now</a>
 					</div>
 				</div>
-				<section class="img-content-container">
-					<img src="Images/consumer-farmer.jpg" alt="#">
+				<section>
+					<video width="612" height="408" loop autoplay controls>
+						<source src="Videos/farmvideo-264-low-res-noaudio.mp4" type="video/mp4" />
+					</video>
 				</section>
 			</div>
 		</section>
@@ -67,7 +75,7 @@
 				<button class="btn">Prices</button>
 			</div>
 			<div id="newsletter-container">
-				<p>Join our Newsletter to recieve deals and specials</p>
+				<p>Join our Newsletter to get update on deals</p>
 				<div>
 					<span class="footer-subscribenewsletteremail">
 						Email *

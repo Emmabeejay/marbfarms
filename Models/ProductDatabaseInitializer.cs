@@ -12,6 +12,7 @@ namespace Aquafarms.Models
 		{
 			GetCategories().ForEach(c => context.Categories.Add(c));
 			GetProducts().ForEach(p => context.Products.Add(p));
+			GetTypes().ForEach(t => context.Types.Add(t));
 		}
 
 		private static List<Category> GetCategories()
@@ -25,11 +26,35 @@ namespace Aquafarms.Models
 				new Category
 				{
 					CategoryID = 2,
-					CategoryName = "Consumer Products"
+					CategoryName = "Household Products"
 				},
 			};
 
 			return categories;
+		}
+
+
+		private static List<Type> GetTypes()
+		{
+			var types = new List<Type>
+			{
+				new Type
+				{
+					TypeID = 1,
+					TypeName = "Household"
+				},
+				new Type
+				{
+					TypeID = 2,
+					TypeName = "Bars"
+				},
+				new Type
+				{
+					TypeID = 3,
+					TypeName = "Events"
+				},
+			};
+			return types;
 		}
 
 		private static List<Product> GetProducts()
@@ -58,7 +83,7 @@ namespace Aquafarms.Models
 					ProductID = 3,
 					ProductName = "Juvenile",
 					Description = "6-12 weeks old",
-					ImagePath="juvenile",
+					ImagePath="juveniles.jpg",
 					UnitPrice = 35.50,
 					CategoryID = 1
 				},

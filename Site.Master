@@ -49,7 +49,7 @@
                         <li class="nav-item"><a class="nav-link" runat="server" href="~/">Home</a></li>
                         <li class="nav-item"><a class="nav-link" runat="server" href="~/About">About</a></li>
                         <!-- <li class="nav-item"><a class="nav-link" runat="server" href="~/Contact">Contact</a></li> -->
-                        <li class="nav-item"><a class="nav-link" runat="server" href="~/ProductList">Products</a></li>
+                        <li class="nav-item"><a class="nav-link" runat="server" href="~/ProductPage/ProductList">Products</a></li>
                         <li><a runat="server" href="~/ShoppingCart" ID="cartCount">&nbsp;</a></li>
                     </ul>
                     <asp:LoginView runat="server" ViewStateMode="Disabled">
@@ -72,26 +72,12 @@
             </div>
         </nav>
         <div id="TitleContent" style="text-align: center">
-            <!--<a runat="server" href="~/">
-                <asp:Image  ID="Image1" runat="server" ImageUrl="~/Images/logo1.jpg" BorderStyle="None" />
-            </a>-->  
+            <a runat="server" href="~/">
+                <!--<asp:Image  ID="Image1" runat="server" ImageUrl="~/Images/logo1.jpg" BorderStyle="None" />-->
+            </a>
             <br />  
         </div>
-        <!--<div id="CategoryMenu" style="text-align: center">       
-            <asp:ListView ID="categoryList"  
-                ItemType="Aquafarms.Models.Category" 
-                runat="server"
-                SelectMethod="GetCategories" >
-                <ItemTemplate>
-                    <b style="font-size: large; font-style: normal">
-                        <a href="<%#: GetRouteUrl("ProductsByCategoryRoute", new { categoryName = Item.CategoryName}) %>">
-                        <%#: Item.CategoryName %>
-                        </a>
-                    </b>
-                </ItemTemplate>
-                <ItemSeparatorTemplate>  |  </ItemSeparatorTemplate>
-            </asp:ListView>
-        </div>-->
+       
         
         <div class="container body-content">
             <asp:ContentPlaceHolder ID="MainContent" runat="server">
@@ -105,7 +91,7 @@
                     <h2>Aquafarms</h2>
                 </div>
             </footer>-->
-            <hr />
+            <hr>
             <footer>
                 <div class="footBase">
                     <p>&copy; <%: DateTime.Now.Year %> - Aquafarms Application</p>
@@ -116,4 +102,4 @@
     <asp:PlaceHolder runat="server">
         <%: Scripts.Render("~/Scripts/bootstrap.js") %>
     </asp:PlaceHolder></body>
-</html>
+</html> 

@@ -1,12 +1,18 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="ProductList.aspx.cs" Inherits="Aquafarms.ProductList" %>
+﻿<%@ Page Title="Products" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="ProductList.aspx.cs" Inherits="Aquafarms.ProductList" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
     <section>
+        <div id="TitleContent" style="text-align: center">
+            <a runat="server" href="~/">
+                <asp:Image  ID="Image1" runat="server" ImageUrl="~/Images/logo1.jpg" BorderStyle="None" />
+            </a>
+            <br />  
+        </div>
         <div>
             <hgroup>
                 <h2><%: Page.Title %></h2>
             </hgroup>
-
+             
             <asp:ListView ID="productList" runat="server" 
                 DataKeyNames="ProductID" GroupItemCount="4"
                 ItemType="Aquafarms.Models.Product" SelectMethod="GetProducts">
@@ -32,7 +38,7 @@
                                 <td>
                                     <a href="<%#: GetRouteUrl("ProductByNameRoute", new { productName = Item.ProductName }) %>">
                                         <img src="/Images/<%#:Item.ImagePath%>"
-                                            width="300" height="200" style="border: solid" /></a>
+                                            width="300" height="200" style="padding:0px; margin:0 10px 20px 0; border: none" /></a>
                                 </td>
                             </tr>
                             <tr>

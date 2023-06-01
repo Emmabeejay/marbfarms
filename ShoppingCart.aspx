@@ -1,5 +1,11 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="ShoppingCart.aspx.cs" Inherits="Aquafarms.ShoppingCart_aspx" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
+    <div id="TitleContent" style="text-align: center">
+            <a runat="server" href="~/">
+                <asp:Image  ID="Image1" runat="server" ImageUrl="~/Images/logo1.jpg" BorderStyle="None" />
+            </a>
+            <br />  
+    </div>
     <div id="ShoppingCartTitle" runat="server" class="ContentHead"><h1>Shopping Cart</h1></div>
     <asp:GridView ID="CartList" runat="server" AutoGenerateColumns="False" ShowFooter="True" GridLines="Vertical" CellPadding="4"
         ItemType="Aquafarms.Models.CartItem" SelectMethod="GetShoppingCartItems" 
@@ -41,15 +47,13 @@
       </td>
       <td>
         <!--Checkout Placeholder -->
-        <asp:Label ID="cartTotal" runat="server" EnableViewState="false"></asp:Label>
-        <button Type="button" OnClick="payWithPaystack()" > Checkout </button>
+        <button Type="button" OnClick="window.location.href='https://www.paystack.com/pay/aquafarms0765431';" > Checkout </button>
         <!--<asp:Button ID="CheckoutBtn" runat="server" Text="paystackCheckout" OnClick="CheckoutBtn_Click" />-->
       </td>
     </tr>
     </table>
-
     <script>
-        var cost = <%=Amt%>;
+        var cost = 1000000;
         function payWithPaystack() {
             var price = cost;
             var handler = PaystackPop.setup({

@@ -78,16 +78,18 @@
 }
 
 
-/*ManageEngine Styling*/
+/*ME Styling*/
 .service-list {
-    padding: 0px;
+    padding: 20px 0;
     text-align: center;
     font-size: .8em;
     box-sizing: border-box;
-    width: 95%;
-    margin: 0px 0px 225px 0px;
-    align-content:center
+    width: 100%;
+    height: 150px;
+    margin: 0px 0px 0px 0px;
+    align-content: center
 }
+
 .service-list-minor {
     display: inline-flex;
     padding: 0px;
@@ -100,12 +102,13 @@
 }
 
 .service-list > li {
-    margin: 0.1px;
-    width: 33.3%;
+    margin: 0px;
+    width: 25%;
     display: inline-block;
     float: left;
     text-align: center
 }
+
 .service-list-minor > li {
     margin: 0.1px;
     width: 33.3%;
@@ -119,12 +122,13 @@
     color: #000;
     position: relative;
     background: #fbfbfb;
-    padding: 30px 10px;
+    padding: 10px 10px;
     border: 1px solid #d5d5d5;
     margin: 10px;
     overflow: hidden;
-    border-radius: 4px
+    border-radius: 2px
 }
+
 .service-list-minor li a {
     display: block;
     color: #000;
@@ -136,10 +140,12 @@
     overflow: hidden;
     border-radius: 4px
 }
+
 .service-list li a:hover {
     background: url(/Images/grid-empty.jpg) no-repeat;
     background-size: cover
 }
+
 .service-list-minor li a:hover {
     background: url(/Images/grid-empty.jpg) no-repeat;
     background-size: cover
@@ -147,20 +153,29 @@
 
 ul li {
     list-style: none;
-    margin: 15px;
-    border-radius: 20px;
-}
-
-ul li a {
-    padding: 1px;
-    color: white;
-    text-decoration: none;
+    margin: 10px;
     border-radius: 10px;
 }
 
-    ul li a:hover {
-        background-color: red;
+    ul li a {
+        padding: 1px;
+        color: white;
+        text-decoration: none;
         border-radius: 10px;
+    }
+
+        ul li a:hover {
+            background-color: red;
+            border-radius: 10px;
+        }
+
+    ul li h3 {
+        color: burlywood;
+        font-size: 20px
+    }
+
+    ul li h4 {
+        font-size: 11px
     }
 
 .product-list ul li {
@@ -210,8 +225,9 @@ span.footer-subscribenewslettersubmit {
     align-items: center;
     padding: 20px 0px 10px 0px
 }
+
 .box-container {
-    padding-top: 1rem 0 .5rem .5rem;
+    padding: 20px 0;
     text-align: center;
     align-items: center
 }
@@ -225,13 +241,15 @@ span.footer-subscribenewslettersubmit {
     justify-items: center;
 }
 
-.box-container-layout p {
-    color: red;
-}
+    .box-container-layout p {
+        color: red;
+    }
 
 .container11 {
-    background-color: aliceblue
+    background-color: aliceblue;
+    padding: 40px 0
 }
+
 .intro-container {
     text-align: center
 }
@@ -287,8 +305,10 @@ span.footer-subscribenewslettersubmit {
 
 
 #container3 {
-    display: grid;
+    display: flex;
     grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    justify-content: center;
+    align-items: center;
     margin: 20px;
     padding: 0
 }
@@ -353,7 +373,6 @@ span.footer-subscribenewslettersubmit {
 }
 
 #row5 {
-    
 }
 
 #row6 {
@@ -369,45 +388,54 @@ span.footer-subscribenewslettersubmit {
 
 #newsletter-container {
     background: url(../Images/customerservice-300px.jpg) no-repeat center;
-
+    width: 25vw;
+    height: 275px;
+    margin: 0px 15px;
+    padding: 15px
 }
+
 #row7 {
     width: 25vw;
     height: 275px;
-    border: 2px solid black;
     background: url('/Images/fish-cut.jpg') no-repeat center center;
     display: flex;
     justify-content: center;
     align-items: flex-end;
     border-radius: 15px;
+    margin: 0px 15px;
+    padding: 15px
 }
 
 #row8 {
     width: 25vw;
     height: 275px;
-    border: 2px solid black;
     background: url('/Images/frys.jpg') no-repeat center center;
     display: flex;
     justify-content: center;
     align-items: flex-end;
     border-radius: 15px;
+    margin: 0px 15px;
+    padding: 15px
 }
 /*Designing the footer*/
 
 .headfoot {
     background-color: navy;
 }
+
 .footer-container {
     text-align: end;
     height: 300px;
     padding: 15px;
     color: burlywood
 }
+
 .footBase {
     display: grid;
     width: 100%;
     text-align: center
 }
+
 .footer-container .footCol1 {
     width: 50%;
     min-height: 220px;
@@ -415,8 +443,9 @@ span.footer-subscribenewslettersubmit {
     float: left;
     border-right: 1px dashed #000
 }
+
 .footer-background {
-    background: url('../Images/logo.jpg') no-repeat 
+    background: url('../Images/logo.jpg') no-repeat
 }
 
 .footer-container .footCol2 {
